@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="crio_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,61 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background_portrait.png" translatesAutoresizingMaskIntoConstraints="NO" id="4AR-Wt-I86">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WV5-YI-2yn">
+                                <rect key="frame" x="62" y="189" width="258" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="258" id="0F0-u8-hdF"/>
+                                    <constraint firstAttribute="height" constant="30" id="aUj-qj-Xjs"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mi5-wp-DmS">
+                                <rect key="frame" x="62" y="227" width="258" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="258" id="6gr-oQ-fPR"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="1tD-tq-IKu">
+                                <rect key="frame" x="47" y="103" width="280" height="56"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1tD-tq-IKu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="9tB-NT-g1U"/>
+                            <constraint firstItem="1tD-tq-IKu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="DqN-nj-Y15"/>
+                            <constraint firstItem="WV5-YI-2yn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HTZ-iB-ezJ"/>
+                            <constraint firstItem="1tD-tq-IKu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I6S-Nv-naP"/>
+                            <constraint firstItem="4AR-Wt-I86" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="LsQ-b4-iLr"/>
+                            <constraint firstItem="4AR-Wt-I86" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QCl-7D-hFa"/>
+                            <constraint firstItem="WV5-YI-2yn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="189" id="TXf-Ki-Ig9"/>
+                            <constraint firstItem="Mi5-wp-DmS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X7M-7X-bJk"/>
+                            <constraint firstItem="4AR-Wt-I86" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="blJ-Pa-VMP"/>
+                            <constraint firstItem="Mi5-wp-DmS" firstAttribute="top" secondItem="WV5-YI-2yn" secondAttribute="bottom" constant="8" id="iBP-r7-rkY"/>
+                            <constraint firstItem="4AR-Wt-I86" firstAttribute="centerX" secondItem="1tD-tq-IKu" secondAttribute="centerX" id="r31-jU-OqW"/>
+                            <constraint firstItem="WV5-YI-2yn" firstAttribute="top" secondItem="1tD-tq-IKu" secondAttribute="bottom" constant="30" id="txb-Sg-WrA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="Mi5-wp-DmS" id="xrH-bi-fpp"/>
+                        <outlet property="username" destination="WV5-YI-2yn" id="yqN-oU-wP1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="login_background_portrait.png" width="948" height="1370"/>
+        <image name="logo.png" width="437" height="100"/>
+    </resources>
 </document>

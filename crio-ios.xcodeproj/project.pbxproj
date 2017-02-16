@@ -12,6 +12,8 @@
 		2806B4F61E370C2600CAC645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2806B4F41E370C2600CAC645 /* Main.storyboard */; };
 		2806B4F81E370C2600CAC645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2806B4F71E370C2600CAC645 /* Assets.xcassets */; };
 		2806B4FB1E370C2600CAC645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2806B4F91E370C2600CAC645 /* LaunchScreen.storyboard */; };
+		28D5CAD01E552C5C00691582 /* login_background_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 28D5CACF1E552C5C00691582 /* login_background_portrait.png */; };
+		28D5CAD21E5534EA00691582 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 28D5CAD11E5534EA00691582 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2806B4F71E370C2600CAC645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2806B4FA1E370C2600CAC645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2806B4FC1E370C2600CAC645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28D5CACF1E552C5C00691582 /* login_background_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_background_portrait.png; sourceTree = "<group>"; };
+		28D5CAD11E5534EA00691582 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				2806B4F71E370C2600CAC645 /* Assets.xcassets */,
 				2806B4F91E370C2600CAC645 /* LaunchScreen.storyboard */,
 				2806B4FC1E370C2600CAC645 /* Info.plist */,
+				28D5CACF1E552C5C00691582 /* login_background_portrait.png */,
+				28D5CAD11E5534EA00691582 /* logo.png */,
 			);
 			path = "crio-ios";
 			sourceTree = "<group>";
@@ -123,6 +129,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D5CAD01E552C5C00691582 /* login_background_portrait.png in Resources */,
+				28D5CAD21E5534EA00691582 /* logo.png in Resources */,
 				2806B4FB1E370C2600CAC645 /* LaunchScreen.storyboard in Resources */,
 				2806B4F81E370C2600CAC645 /* Assets.xcassets in Resources */,
 				2806B4F61E370C2600CAC645 /* Main.storyboard in Resources */,
@@ -297,6 +305,7 @@
 				2806B5011E370C2600CAC645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
