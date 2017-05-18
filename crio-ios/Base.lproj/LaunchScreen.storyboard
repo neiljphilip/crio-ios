@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,20 +22,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_background_portrait.png" translatesAutoresizingMaskIntoConstraints="NO" id="b6a-aM-raQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background_portrait.png" translatesAutoresizingMaskIntoConstraints="NO" id="b6a-aM-raQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="B6Q-YX-rSJ">
-                                <rect key="frame" x="12" y="77" width="347" height="87"/>
+                                <rect key="frame" x="12" y="93" width="347" height="71"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="B6Q-YX-rSJ" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="HKy-QV-EQL"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="B6Q-YX-rSJ" secondAttribute="bottom" constant="503" id="HmY-OE-War"/>
-                            <constraint firstItem="B6Q-YX-rSJ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="57" id="Jba-th-rJF"/>
-                            <constraint firstItem="B6Q-YX-rSJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-4" id="PF1-WH-yEA"/>
+                            <constraint firstItem="B6Q-YX-rSJ" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="0gO-ef-ULu"/>
+                            <constraint firstItem="B6Q-YX-rSJ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="73" id="brE-BK-LuZ"/>
+                            <constraint firstItem="B6Q-YX-rSJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-4" id="brV-Jw-wyc"/>
+                            <constraint firstItem="b6a-aM-raQ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="pSc-mU-zYl"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="B6Q-YX-rSJ" secondAttribute="bottom" constant="503" id="pZa-4c-TKX"/>
+                            <constraint firstAttribute="trailing" secondItem="b6a-aM-raQ" secondAttribute="trailing" id="qho-G2-aZ0"/>
+                            <constraint firstItem="b6a-aM-raQ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="xoh-7O-b2P"/>
+                            <constraint firstItem="b6a-aM-raQ" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="xow-1f-s7F"/>
                         </constraints>
                     </view>
                 </viewController>
