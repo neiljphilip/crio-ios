@@ -1,2 +1,2 @@
 # crio-ios
-An iOS application for Clinical Research IO.
+iOS deployment of Clinical Reseach IO's Electronic Data Capture system.
