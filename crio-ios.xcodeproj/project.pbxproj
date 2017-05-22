@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27D37CD15A72E07A48278253 /* Pods_crio_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9258608FF7B920DB424D9E03 /* Pods_crio_ios.framework */; };
 		2806B4F11E370C2600CAC645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806B4F01E370C2600CAC645 /* AppDelegate.swift */; };
 		2806B4F31E370C2600CAC645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806B4F21E370C2600CAC645 /* ViewController.swift */; };
 		2806B4F61E370C2600CAC645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2806B4F41E370C2600CAC645 /* Main.storyboard */; };
 		2806B4F81E370C2600CAC645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2806B4F71E370C2600CAC645 /* Assets.xcassets */; };
 		2806B4FB1E370C2600CAC645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2806B4F91E370C2600CAC645 /* LaunchScreen.storyboard */; };
+		28639B941ED2B2930014728A /* CrioSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28639B931ED2B2930014728A /* CrioSite.swift */; };
 		28D5CAD01E552C5C00691582 /* login_background_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 28D5CACF1E552C5C00691582 /* login_background_portrait.png */; };
 		28D5CAD21E5534EA00691582 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 28D5CAD11E5534EA00691582 /* logo.png */; };
+		28DF5D8C1ED1E56400A41A14 /* logInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF5D8B1ED1E56400A41A14 /* logInRequest.swift */; };
+		28DF5D8E1ED1EA8900A41A14 /* callWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF5D8D1ED1EA8900A41A14 /* callWebService.swift */; };
+		28DF5D921ED1F93B00A41A14 /* loginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF5D911ED1F93B00A41A14 /* loginResponse.swift */; };
+		28DF5D941ED2904200A41A14 /* CrioUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF5D931ED2904200A41A14 /* CrioUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +30,16 @@
 		2806B4F71E370C2600CAC645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2806B4FA1E370C2600CAC645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2806B4FC1E370C2600CAC645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28639B931ED2B2930014728A /* CrioSite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrioSite.swift; sourceTree = "<group>"; };
 		28D5CACF1E552C5C00691582 /* login_background_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_background_portrait.png; sourceTree = "<group>"; };
 		28D5CAD11E5534EA00691582 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		28DF5D8B1ED1E56400A41A14 /* logInRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logInRequest.swift; sourceTree = "<group>"; };
+		28DF5D8D1ED1EA8900A41A14 /* callWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = callWebService.swift; sourceTree = "<group>"; };
+		28DF5D911ED1F93B00A41A14 /* loginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loginResponse.swift; path = ../loginResponse.swift; sourceTree = "<group>"; };
+		28DF5D931ED2904200A41A14 /* CrioUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrioUser.swift; sourceTree = "<group>"; };
+		6B7B553468A4E1138ECD5047 /* Pods-crio-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crio-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-crio-ios/Pods-crio-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		9258608FF7B920DB424D9E03 /* Pods_crio_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crio_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E05D55B913F58ADF9B663503 /* Pods-crio-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crio-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-crio-ios/Pods-crio-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D37CD15A72E07A48278253 /* Pods_crio_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0955559EB31B0C8F7FE14B50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9258608FF7B920DB424D9E03 /* Pods_crio_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2806B4E41E370C2600CAC645 = {
 			isa = PBXGroup;
 			children = (
 				2806B4EF1E370C2600CAC645 /* crio-ios */,
 				2806B4EE1E370C2600CAC645 /* Products */,
+				BCB88E5FC268BBB8F4ECB00E /* Pods */,
+				0955559EB31B0C8F7FE14B50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,9 +90,31 @@
 				2806B4F91E370C2600CAC645 /* LaunchScreen.storyboard */,
 				2806B4FC1E370C2600CAC645 /* Info.plist */,
 				28D5CACF1E552C5C00691582 /* login_background_portrait.png */,
+				28DF5D901ED1F90D00A41A14 /* CRIOWebService */,
 				28D5CAD11E5534EA00691582 /* logo.png */,
 			);
 			path = "crio-ios";
+			sourceTree = "<group>";
+		};
+		28DF5D901ED1F90D00A41A14 /* CRIOWebService */ = {
+			isa = PBXGroup;
+			children = (
+				28DF5D911ED1F93B00A41A14 /* loginResponse.swift */,
+				28DF5D8D1ED1EA8900A41A14 /* callWebService.swift */,
+				28DF5D8B1ED1E56400A41A14 /* logInRequest.swift */,
+				28DF5D931ED2904200A41A14 /* CrioUser.swift */,
+				28639B931ED2B2930014728A /* CrioSite.swift */,
+			);
+			name = CRIOWebService;
+			sourceTree = "<group>";
+		};
+		BCB88E5FC268BBB8F4ECB00E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B7B553468A4E1138ECD5047 /* Pods-crio-ios.debug.xcconfig */,
+				E05D55B913F58ADF9B663503 /* Pods-crio-ios.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +124,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2806B4FF1E370C2600CAC645 /* Build configuration list for PBXNativeTarget "crio-ios" */;
 			buildPhases = (
+				63BACED6BB9CDE6F39FB8BD6 /* [CP] Check Pods Manifest.lock */,
 				2806B4E91E370C2600CAC645 /* Sources */,
 				2806B4EA1E370C2600CAC645 /* Frameworks */,
 				2806B4EB1E370C2600CAC645 /* Resources */,
+				A6E5E1CC9E0E8A6761DDE090 /* [CP] Embed Pods Frameworks */,
+				D51E41AF7E86653D4AD219F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,13 +190,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		63BACED6BB9CDE6F39FB8BD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6E5E1CC9E0E8A6761DDE090 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-crio-ios/Pods-crio-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D51E41AF7E86653D4AD219F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-crio-ios/Pods-crio-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2806B4E91E370C2600CAC645 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28639B941ED2B2930014728A /* CrioSite.swift in Sources */,
 				2806B4F31E370C2600CAC645 /* ViewController.swift in Sources */,
+				28DF5D8C1ED1E56400A41A14 /* logInRequest.swift in Sources */,
+				28DF5D8E1ED1EA8900A41A14 /* callWebService.swift in Sources */,
+				28DF5D941ED2904200A41A14 /* CrioUser.swift in Sources */,
 				2806B4F11E370C2600CAC645 /* AppDelegate.swift in Sources */,
+				28DF5D921ED1F93B00A41A14 /* loginResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +368,7 @@
 		};
 		2806B5001E370C2600CAC645 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B7B553468A4E1138ECD5047 /* Pods-crio-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "crio-ios/Info.plist";
@@ -277,6 +381,7 @@
 		};
 		2806B5011E370C2600CAC645 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E05D55B913F58ADF9B663503 /* Pods-crio-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "crio-ios/Info.plist";

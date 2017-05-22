@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     
-    @IBAction func register(_ sender: AnyObject) {
-        
+   /* @IBAction func register(_ sender: AnyObject) {
+       
         if username.text == "" || password.text == ""
         {
             let alert = UIAlertController(title: "Error in form",
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
             })))
         }
         else{
-            
+     
             activityIndicator = UIActivityIndicatorView(frame: CGRect(x:0,y:0,width:50, height: 50))
             activityIndicator.center = self.view.center
             activityIndicator.hidesWhenStopped = true
@@ -43,8 +43,18 @@ class ViewController: UIViewController {
             
         }
     }
-    
+    */
     @IBAction func logIn(_ sender: AnyObject) {
+        
+        let request = LoginRequest()
+        request.setUsername(username.text!)
+        request.setPassword(password.text!)
+        let ws = callWebService()
+        ws.crioWebService()
+        
+        
+        
+        
     }
     
     override func viewDidLoad() {
