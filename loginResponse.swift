@@ -7,12 +7,11 @@
 //
 
 import Foundation
-import Mapper
+import EVReflection
 
 
-public class LoginResponse: Mappable {
-    
-    
+
+public class LoginResponse : EVObject {
     
     open var securityToken : String = ""
     open func getSecurityToken() -> String {
@@ -23,16 +22,28 @@ public class LoginResponse: Mappable {
         securityToken = secToken;
     }
     
-    open CrioUser user;
-    public CrioUser getUser() {
+    open var user: CrioUser = CrioUser()
+    open func getUser() -> CrioUser {
         return user;
     }
-    public void setUser(CrioUser user) {
-        this.user = user;
-    }
     
-    open static func createFromJson(json: String) -> LoginResponse {
-        return new LoginResponse().gson().fromJson(json, LoginResponse.class);
+    open func setUser(usr: CrioUser) -> Void {
+        user = usr;
     }
+    /*
+    required public init(map: Mapper) throws {
+        try{
+            self.securityToken = map.from("securityToken")
+            self.user = map.from("user")
+        }
+    }
+     */
+    
+    open static func createFromJson(JSON: NSDictionary) -> LoginResponse {
+        
+        return LoginResponse(dictionary: JSON)
+    }
+
+  
     
 }

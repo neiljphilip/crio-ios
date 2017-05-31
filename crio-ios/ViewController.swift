@@ -45,18 +45,15 @@ class ViewController: UIViewController {
     }
     */
     @IBAction func logIn(_ sender: AnyObject) {
-        
-        let request = LoginRequest()
-        request.setUsername(username.text!)
-        request.setPassword(password.text!)
-        let ws = callWebService()
-        ws.crioWebService()
-        
-        
-        
+        let myWS : crioWebService = crioWebService()
+        myWS.login(username: username.text!, password: password.text!)
         
     }
     
+    @IBAction func register(_ sender: Any) {
+       
+       
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
     

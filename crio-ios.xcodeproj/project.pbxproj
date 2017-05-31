@@ -14,10 +14,10 @@
 		2806B4F81E370C2600CAC645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2806B4F71E370C2600CAC645 /* Assets.xcassets */; };
 		2806B4FB1E370C2600CAC645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2806B4F91E370C2600CAC645 /* LaunchScreen.storyboard */; };
 		28639B941ED2B2930014728A /* CrioSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28639B931ED2B2930014728A /* CrioSite.swift */; };
+		286937D71EDB806A00FB1C54 /* crioWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286937D61EDB806A00FB1C54 /* crioWebService.swift */; };
 		28D5CAD01E552C5C00691582 /* login_background_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 28D5CACF1E552C5C00691582 /* login_background_portrait.png */; };
 		28D5CAD21E5534EA00691582 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 28D5CAD11E5534EA00691582 /* logo.png */; };
 		28DF5D8C1ED1E56400A41A14 /* logInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF5D8B1ED1E56400A41A14 /* logInRequest.swift */; };
-		28DF5D8E1ED1EA8900A41A14 /* callWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF5D8D1ED1EA8900A41A14 /* callWebService.swift */; };
 		28DF5D921ED1F93B00A41A14 /* loginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF5D911ED1F93B00A41A14 /* loginResponse.swift */; };
 		28DF5D941ED2904200A41A14 /* CrioUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF5D931ED2904200A41A14 /* CrioUser.swift */; };
 /* End PBXBuildFile section */
@@ -31,10 +31,10 @@
 		2806B4FA1E370C2600CAC645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2806B4FC1E370C2600CAC645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28639B931ED2B2930014728A /* CrioSite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrioSite.swift; sourceTree = "<group>"; };
+		286937D61EDB806A00FB1C54 /* crioWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = crioWebService.swift; sourceTree = "<group>"; };
 		28D5CACF1E552C5C00691582 /* login_background_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_background_portrait.png; sourceTree = "<group>"; };
 		28D5CAD11E5534EA00691582 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		28DF5D8B1ED1E56400A41A14 /* logInRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logInRequest.swift; sourceTree = "<group>"; };
-		28DF5D8D1ED1EA8900A41A14 /* callWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = callWebService.swift; sourceTree = "<group>"; };
 		28DF5D911ED1F93B00A41A14 /* loginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loginResponse.swift; path = ../loginResponse.swift; sourceTree = "<group>"; };
 		28DF5D931ED2904200A41A14 /* CrioUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrioUser.swift; sourceTree = "<group>"; };
 		6B7B553468A4E1138ECD5047 /* Pods-crio-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crio-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-crio-ios/Pods-crio-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				28DF5D911ED1F93B00A41A14 /* loginResponse.swift */,
-				28DF5D8D1ED1EA8900A41A14 /* callWebService.swift */,
+				286937D61EDB806A00FB1C54 /* crioWebService.swift */,
 				28DF5D8B1ED1E56400A41A14 /* logInRequest.swift */,
 				28DF5D931ED2904200A41A14 /* CrioUser.swift */,
 				28639B931ED2B2930014728A /* CrioSite.swift */,
@@ -246,7 +246,7 @@
 				28639B941ED2B2930014728A /* CrioSite.swift in Sources */,
 				2806B4F31E370C2600CAC645 /* ViewController.swift in Sources */,
 				28DF5D8C1ED1E56400A41A14 /* logInRequest.swift in Sources */,
-				28DF5D8E1ED1EA8900A41A14 /* callWebService.swift in Sources */,
+				286937D71EDB806A00FB1C54 /* crioWebService.swift in Sources */,
 				28DF5D941ED2904200A41A14 /* CrioUser.swift in Sources */,
 				2806B4F11E370C2600CAC645 /* AppDelegate.swift in Sources */,
 				28DF5D921ED1F93B00A41A14 /* loginResponse.swift in Sources */,

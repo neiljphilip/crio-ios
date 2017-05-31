@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import EVReflection
 
 
 public class CrioUser {
+    
     
     internal var userKey: Int64 = 0
     open func getUserKey() -> Int64 {
@@ -88,9 +90,25 @@ public class CrioUser {
     }
 
     open func equals(o : AnyObject) -> BooleanLiteralType{
-        return (getUserKey() == CrioUser.getUserKey())
+        return (getUserKey() == (o as? CrioUser)!.getUserKey())
     }
     
-    
+     /*required public init(map: Mapper) throws {
+            self.userKey = map.from("userKey", transformation: <#(Any) throws -> T#>)
+            self.sites = map.from("sites", transformation: <#(Any) throws -> T#>)
+            self.username =  map.from("username")
+            self.firstName = map.from("firstName")
+            self.lastName = map.from("lastName")
+            self.photoSmallUrl = map.from("photoSmallUrl")
+            self.photoMedUrl = map.from("photoMedUrl")
+            self.photoLargeUrl = map.from("photoLargeUrl")
+    }
+     
+     */
+    open static func createFromJson(JSON: NSDictionary) -> CrioUser {
+        
+        return CrioUser(dictionary: JSON)
+    }
+  
     
 }
