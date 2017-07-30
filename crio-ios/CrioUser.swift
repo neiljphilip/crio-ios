@@ -10,7 +10,7 @@ import Foundation
 import EVReflection
 
 
-public class CrioUser {
+public class CrioUser : EVObject{
     
     
     internal var userKey: Int64 = 0
